@@ -1,0 +1,158 @@
+/* Reset */
+@overlay-zindex: 512;
+@overlaybg-zindex: -1;
+
+a, a:hover, a:focus, a:active, a.active {
+    .easing-animation;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &.ro-list-inline-block {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+/* Special div */
+.ro-nopadding {
+    padding: 0 !important;
+}
+
+.ro-overlay {
+    .overlay(@overlay-zindex);
+}
+
+.ro-overlay-bg {
+    .overlay(@overlaybg-zindex);
+}
+
+.ro-col-nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.ro-relative {
+    position: relative;
+}
+
+.ro-absolute {
+    position: absolute;
+}
+
+.ro-fixed {
+    position: fixed;
+}
+
+.ro-middle {
+    .middle;
+}
+
+.ro-center-block {
+    .center-block;
+}
+
+.ro-center {
+    .center;
+}
+
+.ro-ab-bottom {
+    .ab-bottom;
+}
+
+.ro-bottom {
+    .bottom;
+}
+
+.ro-ab-center {
+    .ab-center;
+}
+
+//middle using table cell
+.ro-cell-vertical-wrapper {
+    .square(100%);
+    display: table;
+
+    .ro-cell-middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .ro-cell-bottom {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+    .ro-cell-top {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+/* Space */
+@for @i from 0 to 20 {
+    .ro-m-#@i * 5 {
+        margin: @i * 5px;
+    }
+
+    .ro-mt-#@i * 5 {
+        margin-top: @i * 5px;
+    }
+
+    .ro-mb-#@i * 5 {
+        margin-bottom: @i * 5px;
+    }
+
+    .ro-ml-#@i * 5 {
+        margin-left: @i * 5px;
+    }
+
+    .ro-mr-#@i * 5 {
+        margin-right: @i * 5px;
+    }
+
+    .ro-p-#@i * 5 {
+        padding: @i * 5px;
+    }
+
+    .ro-pt-#@i * 5 {
+        padding-top: @i * 5px;
+    }
+
+    .ro-pb-#@i * 5 {
+        padding-bottom: @i * 5px;
+    }
+
+    .ro-pl-#@i * 5 {
+        padding-left: @i * 5px;
+    }
+
+    .ro-pr-#@i * 5 {
+        padding-right: @i * 5px;
+    }
+}
+
+/* Video */
+
+.ro-video-bg {
+    .ab-center;
+    position: relative;
+    width: 100%;
+
+    .ro-video-h & {
+        width: auto;
+        height: 100%;
+    }
+}

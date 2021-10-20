@@ -1,0 +1,52 @@
+input[type="text"],input[type="email"],input[type="search"], textarea, select {
+    .easing-animation;
+    width: 100%;
+    outline: none;
+    background-color: @light-color;
+    border: 1px solid @dark-color;
+    padding: 5px 15px;
+	line-height: 28.8px;
+    &:focus {
+        border-color: @main-color;
+    }
+	
+}
+
+select {
+    height: 40px;
+}
+.woocommerce {
+	input[type="text"],input[type="email"],input[type="search"], textarea, select {
+		line-height: 28.8px !important;
+	}
+	.select2-chosen {
+		height: 40px !important;
+	}
+}
+
+textarea {
+    resize: none;
+    height: 115px;
+}
+
+.placeholder {
+    color: @dark-color;
+}
+
+::-webkit-input-placeholder {
+    color: @dark-color;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: @dark-color;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: @dark-color;
+}
+
+:-ms-input-placeholder {
+    color: @dark-color;
+}

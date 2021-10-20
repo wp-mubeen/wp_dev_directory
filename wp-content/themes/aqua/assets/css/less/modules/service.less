@@ -1,0 +1,479 @@
+.ro-service-1-wrapper {
+    position: relative;
+}
+
+.ro-service-1-item {
+    position: relative;
+    margin-bottom: 100px;
+
+    .ro-image {
+        position: relative;
+        width: 60%;
+        z-index: 2;
+    }
+
+    .ro-content {
+        position: relative;
+        width: 50%;
+        z-index: 3;
+
+        p {
+            text-align: center;
+            margin-bottom: 0;
+            padding: 30px 25px 50px;
+
+            .ro-more{
+                position: absolute;right:30px;bottom:25px;
+            }
+        }
+    }
+
+    > :first-child {
+        float: left;
+        margin-right: -10%;
+    }
+
+    > :nth-child(2) {
+        float: right;
+
+        img {
+            float: right;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .ro-service-1-item.ro-service-1-v {
+        padding-top: 150px;
+
+        .ro-image {
+            position: relative;
+            z-index: 2;
+            margin-bottom: -70px;
+            width: 85%;
+        }
+
+        .ro-content {
+            position: relative;
+            width: 100%;
+            z-index: 3;
+
+            h3, p {
+                float: left;
+            }
+
+            h3 {
+                width: 30%;
+                padding-top: 80px;
+            }
+
+            p {
+                width: 70%;
+                text-align: center;
+                margin-bottom: 0;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:767px) {
+    .ro-service-1-item {
+        margin-bottom: 50px;
+        .ro-image {
+            position: relative;
+            width: 80%;
+            z-index: 2;
+        }
+
+        .ro-content {
+            position: relative;
+            width: 70%;
+            z-index: 3;
+
+            p {
+                text-align: center;
+                margin-bottom: 0;
+                padding: 30px;
+            }
+        }
+
+        > :first-child {
+            margin-right: -50%;
+        }
+    }
+}
+
+
+@media(max-width:479px) {
+    .ro-service-1-item {
+        .ro-image {
+            display: none;
+        }
+
+        .ro-content {
+            width: 100%;
+        }
+
+        > :first-child {
+            float: left;
+            margin-right: -100%;
+        }
+    }
+}
+
+
+.ro-service-item-2 {
+    .center-block;
+    max-width: 370px;
+    text-align: center;
+    margin-bottom: 25px;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+        .easing-animation;
+
+        &:after {
+            .center-block;
+            .easing-animation;
+            margin-top: 10px;
+            content: " ";
+            height: 0;
+            width: 0;
+            border-top: 1px solid @dark-color;
+        }
+    }
+
+    &:hover {
+        h4:after {
+            width: 30px;
+        }
+    }
+}
+
+.ro-service-item-3 {
+	line-height: 0;
+    .easing-animation;
+    .center-block;
+    max-width: 370px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    text-align: center;
+
+    h3 {
+        .easing-animation;
+        margin-top: 40px;
+        color: @light-color;
+
+        &:after {
+            .center-block;
+            .easing-animation;
+            margin-top: 10px;
+            content: " ";
+            height: 0;
+            width: 0;
+            border-top: 1px solid @light-color;
+        }
+    }
+
+    p {
+		line-height: 28.8px;
+        .easing-animation;
+        margin-bottom: 10px;
+        padding: 15px;
+		.bgrgba(@light-color, 40);
+    }
+	
+	img {
+		.easing-animation;
+	}
+
+    &:hover {
+        margin-top: 0;
+        margin-bottom: 60px;
+
+        h3 {
+            margin-bottom: 35px;
+            &:after {
+                width: 30px;
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+		img {
+			margin-top: 10px;
+		}
+    }
+}
+
+.ro-service-item-4 {
+    .center-block;
+    max-width: 370px;
+    text-align: center;
+    cursor: pointer;
+    background-color: @light-color;
+    padding-top: 28px;
+    h4 {
+        .easing-animation;
+        &:after {
+            .center-block;
+            .easing-animation;
+            margin-top: 12px;
+            content: " ";
+            height: 0;
+            width: 0px;
+            border-top: 1px solid @dark-color;
+        }
+    }
+
+    p {
+		color: @dark-color;
+        padding: 38px 25px 42px;
+        line-height: 1.6;
+    }
+
+    &:hover {
+        h4 {
+            color: @main-color;
+            &:after {
+                width: 30px;
+                border-top: 1px solid @main-color;
+            }
+        }
+    }
+}
+
+.ro-service-item-5 {
+    .center-block;
+    max-width: 370px;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 25px;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        .easing-animation;
+        margin-bottom: 18px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    &:hover {
+        h4 {
+            color: @main-color;
+        }
+    }
+}
+
+.ro-service-fullwidth {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 0 0;
+    padding-bottom: 40px;
+
+    &.ro-bg-right {
+        background-position: 100% 0;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+        margin-top: 60px;
+    }
+}
+
+.ro-service-list ul {
+    padding: 40px (40px + 50px) 40px 40px;
+
+    li {
+        .clearfix;
+        position: relative;
+        line-height: 40px;
+        font-style: italic;
+    }
+
+    .ro-service {
+        position: relative;
+        float: left;
+        padding-right: 30px;
+    }
+
+    .ro-separator {
+        position: relative;
+        display: table-cell;
+        content: " ";
+        width: 2000px;
+        height: 28px;
+        border-bottom: 1px solid @light-color;
+    }
+
+    .ro-price {
+        text-align: right;
+        position: absolute;
+        font-weight: 700;
+        width: 50px;
+        right: -50px;
+        top: 0;
+    }
+}
+
+@media(min-width:480px) and (max-width:991px) {
+    .ro-service-fullwidth, .ro-service-fullwidth.ro-bg-right {
+        background-position: 50% 0;
+    }
+}
+
+
+@media(max-width:479px) {
+    .ro-service-list ul {
+        padding: 15px (15px + 40px) 15px 15px;
+
+        .ro-service {
+            padding-right: 0;
+        }
+
+        .ro-price {
+            width: 40px;
+            right: -40px;
+        }
+
+        .ro-separator {
+            display: none;
+        }
+    }
+}
+
+.ro-service-list-wrap {
+    .ro-service-list ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .panel-body {
+        border-top: 0 !important;
+        height: 200px;
+        overflow: auto;
+    }
+}
+
+.ro-specialize-content {
+	.bgrgba(@light-color, 20);
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+	padding-right: 40px;
+
+	li {
+		list-style: disc;
+		padding: 10px 0;
+	}
+}
+.ro-specialize-list {
+	overflow-y: auto;
+	ul {
+		padding-left: 18px;
+		li {
+			list-style: disc;
+			margin-bottom: 23px;
+		}
+	}
+}
+
+.ro-footer {
+	a {
+		font-size: @font-size-6;
+		display: inline-block;
+		color: @light-color;
+		padding: 8px 35px;
+		background-color: @dark-color;
+		&:hover {
+			background-color: @main-color;
+		}
+	}
+}
+
+@media(min-width:992px) {
+	.ro-specialize-list {
+		margin-right: 50px;
+		height: 130px;
+	}
+	.ro-footer {
+		margin-top: 15px;
+		a {
+			margin-left: 282px;
+		}
+	}
+}
+
+@media(min-width:1200px) {
+	.ro-specialize-list {
+		margin-right: 85px;
+		height: 181px;
+	}
+	.ro-footer {
+		a {
+			margin-left: 347px;
+		}
+	}
+}
+@media(min-width:1500px) {
+	.ro-specialize-list {
+		margin-right: 100px;
+		height: 228px;
+	}
+	.ro-footer {
+		margin-top: 30px;
+		a {
+			margin-left: 332px;
+		}
+	}
+}
+
+@media(min-width:1800px) {
+	.ro-specialize-list {
+		margin-right: 115px;
+		height: 283px;
+		
+	}
+	.ro-footer {
+		margin-top: 0px;
+		a {
+			margin-left: 317px;
+		}
+	}
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	.ro-specialize-list {
+		width: 750px;
+		padding: 0 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ro-footer {
+		margin-top: 20px;
+		a {
+			float: right;
+		}
+	}
+}
+
+@media(max-width:767px) {
+	.ro-footer {
+		margin-top: 30px;
+		a {
+			float: right;
+		}
+	}
+}

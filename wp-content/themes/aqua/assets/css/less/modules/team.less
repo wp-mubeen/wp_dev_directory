@@ -1,0 +1,43 @@
+.ro-team-item {
+    .center-block;
+    position: relative;
+    text-align: center;
+    max-width: 370px;
+
+    .ro-content {
+        h5 {
+			text-transform: uppercase;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            .center-block;
+        }
+
+        .ro-social li {
+            color: @darkgray-color;
+            font-size: 18px;
+			padding: 0 4px;
+        }
+    }
+	.ro-image {
+		line-height: 0;
+		img {
+			.easing-animation;
+			cursor: pointer;
+			opacity: 0.9;
+			transform: scale(0.97);
+			transform-origin: 50% 100%;
+		}
+		&.ro-zoom{
+			&:hover {
+				img {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}

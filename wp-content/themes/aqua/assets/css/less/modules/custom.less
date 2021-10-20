@@ -1,0 +1,120 @@
+.ro-advertise-2 .ro-btn-bd-2.ro-btn-bd-green {
+	color: @dark-color;
+	border: 1px solid @main-color;
+	&:hover {
+		color: @light-color;
+	}
+}
+.ro-advertise-2 .ro-btn-bd-2.ro-btn-bd-pink {
+	color: @dark-color;
+	border: 1px solid @bg-color-3;
+	&:hover {
+		color: @light-color;
+	}
+}
+.ro-speciallize-sm {
+	padding-left: 85px !important;
+}
+@media(max-width: 991px) {
+	.ro-speciallize-sm {
+		padding-right: 85px !important;
+		padding-bottom: 85px !important;
+		.ro-specialize-list {
+			margin-left: 0;
+		}
+	}
+}
+@media(max-width: 767px) {
+	.ro-advertise-2 .vc_col-sm-9 {
+		padding-bottom: 50px !important;
+		padding-top: 50px !important;
+		text-align: center;
+	}
+	.ro-speciallize-sm {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+}
+
+.ro-full-height {
+	height: 100vh;
+	overflow: hidden;
+}
+.ro-text-large-white {
+	color: @light-color;
+    font-size: 60px;
+	line-height: normal;
+	padding-top: 40px;
+}
+.ro-follow-button-wrap {
+	position: absolute;
+	bottom: -100px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+	a {
+		border: 1px solid @light-color;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		.easing-animation;
+		width: 40px;
+		&:before {
+			color: @light-color;
+			content: "a";
+			font-family: "aqua icon" !important;
+			font-size: 25px;
+		}
+		&:hover {
+			border: 1px solid @main-color;
+			&:before {
+				color: @main-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.ro-text-large-white {
+		font-size: 24px;
+	}
+}
+@media (max-width: 640px) {
+	.vc_row.ro-full-height {
+		padding-top: 60px !important;
+	}
+}
+.ro-about2-image {
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	.bdrgba(10px, solid, @light-color, 50);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    overflow: hidden;
+}
+.ro-fancybox-wrap img {
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}
+.vc_row.wpb_row.ro-about-us {
+	margin-top: -200px;
+}
+@media(max-width: 991px) {
+	.vc_row.wpb_row.ro-about-us {
+		margin-top: 0;
+	}
+}

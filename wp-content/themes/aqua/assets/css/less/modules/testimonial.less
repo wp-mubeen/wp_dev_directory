@@ -1,0 +1,346 @@
+.ro-testimonial-slider {
+    .ro-item {
+        text-align: center;
+
+        h5 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .flex-direction-nav {
+        position: relative;
+        text-align: center;
+        .clearfix;
+
+        .flex-nav-next, .flex-nav-prev {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .flex-next, .flex-prev {
+            font-size: 0;
+			position: absolute;
+            &:before {
+                font-size: 16px;
+                font-family: "aqua icon" !important;
+            }
+        }
+
+        .flex-next:before {
+            content: "d";
+        }
+
+        .flex-prev:before {
+            content: "b";
+        }
+    }
+}
+
+.ro-testimonial-scroll-wrapper {
+    //position: relative;
+    //float: left;
+    &:before {
+        content: " ";
+        z-index: 512;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(243, 243, 240, 1) 0%, rgba(243, 243, 240, 0.99) 1%, rgba(243, 243, 240, 0.5) 50%, rgba(243, 243, 240, 0) 100%);
+    }
+
+    &:after {
+        content: " ";
+        z-index: 512;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        height: 80px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(243, 243, 240, 0) 0%, rgba(243, 243, 240, 0.5) 50%, rgba(243, 243, 240, 0.99) 99%, rgba(243, 243, 240, 1) 100%);
+    }
+}
+
+.ro-testimonial-scroll {
+    position: relative;
+    float: left;
+    text-align: center;
+	.bgrgba(@light-color, 50);
+    height: 460px;
+    overflow: auto;
+
+    .ro-hr {
+        border-color: @gray-color;
+        margin: 0 auto;
+        width:75%;
+    }
+
+    .ro-item {
+        padding: 50px 40px 20px;
+    }
+}
+
+.ro-testimonial-scroll-image{
+    height:460px;
+    padding-top: 60px;
+}
+
+.ro-testimonial-1 {
+    position: relative;
+    .ro-item {
+        p {
+            font-size: @font-size-4;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .ro-image {
+            margin-left: auto;
+            margin-right: auto;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+			.bdrgba(4px, solid, @bg-color-4, 70);
+            border-radius: 50%;
+        }
+        .ro-name {
+            position: relative;
+            width: 228px;
+            margin: 30px auto 20px;
+            &:before {
+                content: "";
+                width: 100%;
+                left: 0;
+                position: absolute;
+                border-top: 1px solid @main-color;
+                top: 50%;
+                z-index: 3;
+
+            }
+            p {
+                padding-left: 6px;
+                padding-right: 6px;
+                position: relative;
+                z-index: 4;
+                margin-bottom: 0;
+                display: inline-block;
+                font-weight: 600;
+                color: @main-color;
+                background-color: @light-color;
+            }
+        }
+    }
+    .flex-control-nav {
+        width: 100%;
+        text-align: center;
+        li {
+            margin: 0 5px;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
+    }
+    .flex-control-paging {
+        li {
+            a {
+                width: 8px;
+                height: 8px;
+                display: block;
+                background: @gray-color-2;
+                cursor: pointer;
+                text-indent: -9999px;
+                border-radius: 50%;
+                &:hover {
+                    background: @main-color;
+                }
+                &.flex-active {
+                    background: @main-color;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.ro-testimonial-2 {
+    position: relative;
+    .ro-item {
+        .ro-image {
+            margin-left: auto;
+            margin-right: auto;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+			.bdrgba(4px, solid, @light-color, 50);
+            border-radius: 50%;
+			float: right;
+        }
+        .ro-content {
+			padding-right: 170px;
+			padding-top: 6px;
+			text-align: left;
+            p {
+                font-size: @font-size-4;
+                font-style: italic;
+                font-weight: 400;
+                color: @light-color;
+            }
+            .ro-name {
+                position: relative;
+                width: 228px;
+                text-align: center;
+                margin: 0px auto;
+				float: right;
+                &:before {
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    position: absolute;
+                    border-top: 1px solid @light-color;
+                    top: 50%;
+                    z-index: 3;
+
+                }
+                p {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    position: relative;
+                    z-index: 4;
+                    margin-bottom: 0;
+                    display: inline-block;
+                    font-weight: 600;
+                    background-color: @bg-color-6;
+                }
+            }
+        }
+    }
+    .flex-direction-nav {
+        position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 10;
+        a {
+			background: transparent;
+            text-decoration: none;
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: -65px 0 0;
+            overflow: hidden;
+            opacity: 0;
+            cursor: pointer;
+            .easing-animation;
+
+            &:before {
+                font-family: "aqua icon";
+                font-size: 20px;
+                display: inline-block;
+                color: @light-color;
+            }
+			&.flex-prev:before {
+				content: 'e';
+			}
+            &.flex-next:before {
+                content: 'f';
+            }
+        }
+        .flex-prev {
+            left: 0px;
+        }
+        .flex-next {
+            right: 0px;
+            text-align: right;
+        }
+    }
+    &:hover {
+        .flex-direction-nav {
+            .flex-prev {
+                opacity: 0.9;
+                left: 80px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .flex-next {
+                opacity: 0.9;
+                right: 80px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @media (min-width:992px) {
+        .ro-item {
+            padding: 85px 0;
+            .ro-image {
+                float: right;
+            }
+            .ro-content {
+                padding-right: 170px;
+                padding-top: 6px;
+                .ro-name {
+                    float: right;
+                }
+            }
+        }
+    }
+    @media (max-width:991px) {
+        .ro-item {
+            padding: 50px 0;
+            .ro-content {
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+        .flex-direction-nav {
+            .flex-prev {
+                left: 0px;
+            }
+            .flex-next {
+                right: 0px;
+            }
+        }
+        &:hover {
+            .flex-direction-nav {
+                .flex-prev {
+                    left: 30px;
+                }
+                .flex-next {
+                    right: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width:767px) {
+        &:hover {
+            .flex-direction-nav {
+                .flex-prev {
+                    left: 0px;
+                }
+                .flex-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+    @media (max-width:479px) {
+        .ro-item {
+            .ro-content {
+                .ro-name {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:479px) {
+	.ro-testimonial-2 .ro-item .ro-image {
+		float: none;
+	}
+	.ro-testimonial-2 .ro-item .ro-content {
+		padding: 0;
+	}
+}

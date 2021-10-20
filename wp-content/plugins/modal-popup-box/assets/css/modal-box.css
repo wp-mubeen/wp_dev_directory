@@ -1,0 +1,22 @@
+@media only screen and (max-width: 500px) {
+   .md-modal {
+		width:70% !important;
+	}
+	.md-content > h3 {
+		font-size: 2em !important;
+	}
+	.md-content > div {
+		font-size: 1em !important;
+	}
+}
+@media only screen and (max-width: 700px) {
+   .md-modal {
+		width:70% !important;
+	}
+	.md-content > h3 {
+		font-size: 2em !important;
+	}
+	.md-content > div {
+		font-size: 1em !important;
+	}
+}
